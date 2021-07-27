@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grocery Store</title>
+    <style>
+        .head{
+            text-align: center;
+        }
+
+        .container1{
+            display: flex;
+            justify-content: space-evenly;
+            height: 10vh;
+            background-color: cornflowerblue;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .container2{
+            height: auto;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .header-part,.item-part{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .container3{
+            background-color: cadetblue;
+            height: 10vh;
+            border-radius: 15px;
+        }
+
+        .total-part{
+            padding-left: 500px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .btnX{
+            margin-left: 150px;
+        }
+
+        .btn{
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="head">Grocery Store</h1>
+    <div class="container1">
+        <div class="row">
+            <!-- <form action="" id="form"> -->
+                <!-- <div>1</div> -->
+                <select id="grocery" name="grocery_name">
+                    <option value="select">select</option>
+                    <option value="tomatoes">Tomatoes</option>
+                    <option value="potatoes">Potatoes</option>
+                    <option value="ladyfinger">Ladyfinger</option>
+                    <option value="bringle">Bringle</option>
+                </select>
+                <!-- <input type="text" name="grocery_name" placeholder="Enter the Grocery name" id="grocery">
+                <input type="text" name="units" placeholder="Total Units" id="unit"> -->
+                <select id="unit" name="unit">
+                    <option value="select">select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="text" name="grocery_name" placeholder="Price per unit" id="unit-price">
+                <button name="btn" class="btn" id="btn">Add Item</button>
+            <!-- </form> -->
+        </div>
+        <div>
+            GROCERY
+        </div>
+    </div><br><br>
+    <div class="container2">
+        <div class="row" id="rowd">
+            <!-- <div>1</div> -->
+           <div class="header-part">
+               <h4>Grocery Name</h4>
+               <h4>Units</h4>
+               <h4>Unit Price</h4>
+               <h4>Total Price</h4>
+            </div>
+            <div  id="item-part">
+                
+            </div>
+            <div id="button-part">
+
+            </div>
+            <!-- <div class="item-part" id="item-part">
+                <h4 id="grocery-item">---</h4>
+                <h4 id="unit-item">---</h4>
+                <h4 id="per-unit-item">---</h4>
+                <h4 id="total-price">---</h4>
+            </div> -->
+        </div>
+    </div><br><br>
+    <div class="container3">
+        <div class="row">
+           <div class="total-part">
+               <div>
+                    <h4>Grand Total :</h4>
+               </div>
+                <div>
+                    <h4 id="grand-total">--</h4>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
